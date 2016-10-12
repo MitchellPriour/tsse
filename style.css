@@ -1,0 +1,53 @@
+li {
+	display: inline;
+}
+article {
+	border-style: solid;
+	border-width: medium;
+	background-color: #CCFFFF;
+	width: 640px;
+}
+img {
+	float: left;
+	padding: 1em;
+}
+ul {
+	float: right;
+}
+form {
+	padding: 1em;
+	width: 50%;
+	margin: 0 auto;
+}
+div#slider{
+	width: 10%;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 50px;
+	overflow: hidden;
+}
+div#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	text-align: left;
+	animation: 30s slidy infinite;
+}
+div#slider figure img {
+	width: 20%;
+	height: auto;
+	float: left;
+}
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; } 
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; } 
+}
